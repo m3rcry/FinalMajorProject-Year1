@@ -16,7 +16,7 @@ public class MovingCamera : MonoBehaviour
 
    
     private void Update() {
-        transform.position = Vector3.Lerp(transform.position, playerTarget.transform.position + offset, 0.01f);
+        transform.position = Vector3.Lerp(transform.position, playerTarget.transform.position + offset, 0.2f);
 
         transform.position = new Vector3
         (
