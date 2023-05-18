@@ -9,9 +9,9 @@ public class PlayerInteract : MonoBehaviour
        if (Input.GetKeyDown(KeyCode.E)){
            float interactRange = 5f;
            Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
-           foreach (Collider collider in colliderArray) 
+           foreach (Collider Collider in colliderArray) 
            {
-               Debug.Log(collider);
+               Debug.Log(GetComponent<Collider>());
            }
        }
    }
